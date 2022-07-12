@@ -1,0 +1,159 @@
+html,body {
+    background: #F2F2F2;
+    margin: 0;
+    padding: 0;
+    position:relative;
+    height: 100%;
+}
+
+#header {
+    display: flex;
+}
+
+#mainContent {
+    display: flex;
+}
+
+#footer{
+    position:absolute;
+    height:100px;
+    bottom:0;
+    left:0;
+    width:100%;
+}
+
+#boxOne {
+    width: 301px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    margin-left: 20%;
+    background: #DDDDDD;
+    border-radius: 0px 0px 5px 5px;
+}
+
+#boxTwo {
+    width: 621px;
+    height: 100px;
+    margin-left: 19px;
+    background: #DDDDDD;
+    border-radius: 0px 0px 5px 5px;
+    margin-bottom: 60px;
+}
+
+#boxTwo p {
+    color: white;
+    size: 15px;
+    margin-left: 15%;
+    margin-top: 7%;
+}
+
+#boxThree{
+    position: relative;
+    width: 941px;
+    height: 100%;
+    background: #DDDDDD;
+    border-radius: 5px 5px 0px 0px;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    align-items: center;
+}
+
+#boxThree p{
+    color: white;
+    size: 15px;
+   margin: 0;
+   padding: 0;
+   margin-left: 20%;
+}
+
+.image {
+    height: 200px;
+    border-radius: 5px;
+}
+
+#allImages {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow-x: hidden;
+    gap: 10px;
+}
+
+#firstRow{
+    display: flex;
+    gap: 10px;
+}
+
+#secondRow{
+    display: flex;
+    gap: 10px;
+}
+
+#right {
+    background: #F2F2F2;
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    left: 60px;
+    top: 0px;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    background-image: url(/arrow-gray-left.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+#right:hover {
+    background-image: url(/arrow-blue-left.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-color: #134880;
+}
+
+#left {
+    background: #F2F2F2;
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    left: 60px;
+    top: 0px;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    background-image: url(/arrow-gray-right.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#left:hover {
+    background-image: url(/arrow-blue-right.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-color: #134880;
+}
+
+#dummyText h2 {
+    color: #134880;
+    width: 100%;
+}
+
+#dummyText{
+    display: flex;
+    flex-direction: column;
+    max-width: 55%;
+    margin-left: 2%;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+

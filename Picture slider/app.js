@@ -1,0 +1,18 @@
+$(document).ready(function(){
+    $('#right').click(function(){
+        $('.lsr').hide().prependTo("#firstRow").fadeIn("slow").removeClass("lsr");
+        $('.lfr').hide().prependTo("#secondRow").fadeIn("slow").removeClass("lfr"); 
+        $("img:eq(4)").addClass("lfr")
+        $("img:eq(8)").addClass("lsr")
+    })
+//controls the button with the right arrow
+
+    $('#left').click(function(){
+        $('.ffr').hide().appendTo("#secondRow").fadeIn("slow").removeClass("ffr");
+        $('.fsr').hide().appendTo("#firstRow").fadeIn("slow").removeClass("fsr");
+        $("img:eq(0)").addClass("ffr");
+        $("img:eq(5)").addClass("fsr")
+    })
+
+    //controls the button with the left arrow
+})
