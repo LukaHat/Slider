@@ -1,0 +1,41 @@
+@mixin picture
+    border-radius: 5px
+    height: 200px
+    position: relative
+    margin-right: 10px
+
+@mixin marginPadding
+    margin: 0
+    padding: 0
+
+@mixin button
+    border: 1px solid #DDDDDD
+    border-radius: 5px
+    width: 60px
+    height: 60px
+    background-repeat: no-repeat
+    background-position: center
+
+@mixin paragraph
+    width: 245px
+    height: 18px
+    color: $white
+    font-family: 'Helvetica Neue', sans-serif
+    font-size: 15px
+    line-height: 18px
+    padding: 0
+
+@mixin headerFooterDisplay
+    display: flex
+    align-items: center
+    justify-content: flex-end
+
+@mixin mainText
+    width: 300.93px
+    font-family: 'Source Sans Pro', sans-serif
+    letter-spacing: -0.2px
+    @include marginPadding
+
+@mixin box
+    height: 100px
+    background-color: $light-gray

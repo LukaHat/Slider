@@ -1,0 +1,99 @@
+@import './mixins'
+@import './variables'
+body
+    @include marginPadding
+    background-color: $gray-95
+
+#mainWrap
+    @include marginPadding
+    #contentWrap
+        height: 730px
+        width: 1430px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        img
+            @include picture
+    #header
+        @include headerFooterDisplay
+    #boxOne
+        width: 301px
+        @include box
+        border-radius: 0px 0px 5px 5px
+    #boxTwo
+        width: 621px
+        @include box
+        border-radius: 0px 0px 5px 5px
+        margin-left: 19px
+        p
+            @include paragraph
+            margin-top: 39px
+            margin-left: 80px
+
+    #footer
+        @include headerFooterDisplay
+        #boxThree
+            width: 941px
+            @include box
+            border-radius: 5px 5px 0px 0px
+            p
+                @include paragraph
+                margin-top: 42px
+                margin-left: 80px
+    #bodyWrap
+        display: flex
+        justify-content: flex-end
+        height: 410px
+        #sliderWrap
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            height: 210px
+            width: 1110px
+            @include marginPadding
+            #firstRow
+                margin-bottom: 10px
+                height: 200px
+            #secondRow
+                @include marginPadding
+            #buttonWrap
+                display: flex
+                flex-direction: column
+                position: absolute
+                top: 365px
+                left: 1055px
+                margin-top: 10px
+                button
+                    @include button
+
+                #left
+                    border-radius: 5px
+                    background-image: url(../assets/arrow-gray-left.png)
+                    &:hover
+                        background-image: url(../assets/arrow-blue-left.png)
+                        border-color: $dark-blue
+
+                #right
+                    border-radius: 5px
+                    background-image: url(../assets/arrow-gray-right.png)
+                    margin-top: 10px
+                    &:hover
+                        background-image: url(../assets/arrow-blue-right.png)
+                        border-color: $dark-blue
+
+        #textWrap
+            h2
+                height: 120px
+                font-weight: 700
+                font-size: 32px
+                line-height: 38px
+                color: $dark-blue
+                @include mainText
+
+            p
+                height: 156px
+                font-weight: 400
+                font-size: 18px
+                line-height: 26px
+                color: $dark-grey
+                @include mainText
